@@ -8,9 +8,30 @@ st.set_page_config(page_title="Options & Derivatives Explorer", layout="wide")
 
 st.title("Options & Derivatives Explorer")
 st.markdown("""
-This app helps you understand the key concepts of options and derivatives as explained in Chapter 2 of 
-"Paul Wilmott Introduces Quantitative Finance". Explore various option payoffs and strategies through interactive visualizations.
+This app helps you understand the key concepts of options and derivatives through interactive visualizations.
+Explore option payoffs, strategies, and factors affecting prices.
+
+*Created by Luís Simões da Cunha*
 """)
+
+# Add license and disclaimer information
+with st.expander("License & Disclaimer"):
+    col1, col2 = st.columns([1, 3])
+    with col1:
+        st.image("https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc.png", width=120)
+    with col2:
+        st.markdown("""
+        ### CC BY-NC License
+        This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/).
+        
+        ### Disclaimer
+        - This application is for educational purposes only.
+        - The author is not a licensed financial advisor, and this content should not be taken as financial advice.
+        - Information provided is simplified for educational purposes and may not reflect all market complexities.
+        - Options trading involves significant risk and potential for loss.
+        - Accuracy of models and calculations is not guaranteed.
+        - Users should consult with qualified professionals before making investment decisions.
+        """)
 
 # Sidebar for navigation
 st.sidebar.title("Navigation")
@@ -982,7 +1003,7 @@ elif page == "Factors Affecting Price":
 st.markdown("---")
 st.markdown("""
 ### Summary
-This app demonstrates the fundamental concepts of options trading covered in Chapter 2 of "Paul Wilmott Introduces Quantitative Finance":
+This app demonstrates the fundamental concepts of options trading:
 
 1. Options give rights without obligations
 2. The primary factors affecting option prices are:
@@ -999,5 +1020,12 @@ This app demonstrates the fundamental concepts of options trading covered in Cha
 
 4. Put-call parity provides a fundamental relationship between call and put prices
 
-For more details on options pricing models, hedging strategies, and advanced derivatives, refer to the book.
+### About the Author
+Luís Simões da Cunha is a financial educator specializing in derivatives and quantitative finance. This tool was developed to help students and practitioners visualize key options concepts for educational purposes.
+
+### Contact
+For questions, suggestions, or educational inquiries, please contact the author.
+
+---
+*© 2025 Luís Simões da Cunha. All rights reserved except as granted under CC BY-NC license.*
 """)
